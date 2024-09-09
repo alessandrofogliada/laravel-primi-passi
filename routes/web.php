@@ -5,7 +5,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $name_framework = 'Laravel';
+
+    return view('homepage' , compact('name_framework', 'colors' ,'teams'));
+});
+
+Route::get('/colors' , function (){
+
     $colors = ['giallo' , 'verde' , 'blu' , 'viola' , 'rosso'];
+
+    return view('colors' , compact('colors'));
+});
+
+Route::get('/teams' , function (){
     $teams = [
         $first_team = ' Como ',
         $first_team = ' Milan ',
@@ -13,5 +24,7 @@ Route::get('/', function () {
         $first_team = ' Roma '
     ];
 
-    return view('homepage' , compact('name_framework', 'colors' ,'teams'));
+    return view('teams' , compact('teams'));
 });
+
+
