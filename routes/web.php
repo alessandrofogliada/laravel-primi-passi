@@ -3,5 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $name_framework = 'Laravel';
+
+    return view('homepage' , compact('name_framework'));
 });
