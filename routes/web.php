@@ -6,7 +6,7 @@ Route::get('/', function () {
 
     $name_framework = 'Laravel';
 
-    return view('homepage' , compact('name_framework', 'colors' ,'teams'));
+    return view('homepage' , compact('name_framework'));
 });
 
 Route::get('/colors' , function (){
