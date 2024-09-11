@@ -7,14 +7,14 @@ Route::get('/', function () {
     $name_framework = 'Laravel';
 
     return view('homepage' , compact('name_framework'));
-});
+})->name('homepage');
 
 Route::get('/colors' , function (){
 
     $colors = ['giallo' , 'verde' , 'blu' , 'viola' , 'rosso'];
 
     return view('colors' , compact('colors'));
-});
+})->name('colors');
 
 Route::get('/teams' , function (){
     $teams = [
@@ -25,6 +25,6 @@ Route::get('/teams' , function (){
     ];
 
     return view('teams' , compact('teams'));
-});
+})->name('teams');
 
 

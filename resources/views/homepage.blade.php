@@ -12,9 +12,9 @@
 
     <header>
         <div class="d-flex justify-content-evenly">
-            <a href="http://127.0.0.1:8001/">Home</a>
-            <a href="http://127.0.0.1:8000/colors">Colori</a>
-            <a href="http://127.0.0.1:8000/teams">Team</a>
+            <a href="{{route('homepage')}}">Home</a>
+            <a href="{{route('colors')}}">Colori</a>
+            <a href="{{route('teams')}}">Team</a>
         </div>
     </header>
 
